@@ -11,6 +11,7 @@ if (!isset($usuario)){
   <meta charset="UTF-8">
   <title>Oficios ICO</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/img/ICOFavicion.png" type="image/x-icon">
 
 </head>
 <style>
@@ -61,10 +62,13 @@ if (!isset($usuario)){
 
       <div class="mt-4">
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <button class="btn btn-primary"> No. de Acuerdos</button>
-        
       </div>
     </form>
+    <br>
+    <a href="./indexAcuerdo.php"><button class="btn btn-primary" > No. de Acuerdos</button></a> 
+    <div class="col text-end">
+        <button class="btn btn-danger" onclick="location.href='./Logica/session_destroyAdmin.php'">Salir</button>
+    </div>
   </div>
   <?php
   include './Logica/conexion.php';

@@ -9,7 +9,14 @@
     <link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
     <link rel="shortcut icon" href="./assets/img/favicon.jpg" type="image/x-icon">
     <title>Oficios ICO</title>
+    <link rel="shortcut icon" href="./assets/img/ICOFavicion.png" type="image/x-icon">
 </head>
+<style>
+    .navInicio{
+        background: #020024;
+background: linear-gradient(338deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    }    
+</style>
 <script>
     function valida(e){
         tecla = (document.all) ? e.keyCode : e.which;
@@ -26,4 +33,5 @@
 </script>
 
 <body>
-<nav   style="height:200px;  width=200;  " role="navigation"></nav>
+<nav  class="navInicio"  style="  width=200;  " role="navigation"></nav>
+
