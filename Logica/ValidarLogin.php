@@ -5,7 +5,8 @@ $usuario = $_POST['nombre_usuario'];
 $password = $_POST['password'];
 
 //$q = "SELECT COUNT(*) as contar from usuarios where nombre_usuario= '$usuario' and password = '$password'";
-$q = "SELECT COUNT(*) as contar from usuarios where nombre= '$usuario' and password = '$password'";
+
+$q = "SELECT COUNT(*) as contar from usuarios where nombre_usuario= '$usuario' and password = '$password'";
 $consulta = mysqli_query($conn,$q);
 
 $array = mysqli_fetch_array($consulta);
